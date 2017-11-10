@@ -1,12 +1,15 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import { connect } from 'react-redux';
-import Title from '../components/Title';
+import Feed from '../components/Feed';
+import Header from '../components/Header';
+import SideBar from '../components/SideBar';
 
-const AppContainer = ({ name }) => {
+const AppContainer = () => {
     return (
         <div>
-            <Title name={name} />
+            <Header /><br />
+            <SideBar /><br /><br />
         </div>
     );
 };
